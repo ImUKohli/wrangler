@@ -26,6 +26,7 @@ import io.cdap.wrangler.api.DirectiveParseException;
 import io.cdap.wrangler.api.RecipeException;
 import io.cdap.wrangler.api.RecipeParser;
 import io.cdap.wrangler.api.parser.UsageDefinition;
+import io.cdap.wrangler.registry.CompositeDirectiveRegistry;
 import io.cdap.wrangler.registry.DirectiveInfo;
 import io.cdap.wrangler.registry.DirectiveRegistry;
 
@@ -59,6 +60,9 @@ public class GrammarBasedParser implements RecipeParser {
     this.recipe = recipe;
     this.registry = registry;
     this.context = context;
+  }
+
+  public GrammarBasedParser(String namespace, String[] recipe, CompositeDirectiveRegistry registry) {
   }
 
   /**
@@ -100,4 +104,6 @@ public class GrammarBasedParser implements RecipeParser {
       throw new RecipeException(e.getMessage(), e);
     }
   }
+
+
 }

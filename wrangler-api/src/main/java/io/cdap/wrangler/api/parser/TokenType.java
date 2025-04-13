@@ -147,8 +147,26 @@ public enum TokenType implements Serializable {
    * </code>
    */
   RANGES,
+  /**
+   * Represents the enumerated type for the object of type {@code ByteSize} type.
+   * This type is associated with a token that represents a byte size value followed by a unit,
+   * such as 'B', 'KB', 'MB', 'GB', 'TB', or 'PB'. E.g.
+   * <code>
+   *   10KB, 1.5MB
+   * </code>
+   */
+    BYTE_SIZE,
 
   /**
+   * Represents the enumerated type for the object of type {@code TimeDuration} type.
+   * This type is associated with a token that represents a time duration value followed by a unit,
+   * such as 'ns', 'ms', 's', 'm', 'h', or 'd'. E.g.
+   * <code>
+   *   150ms, 2.1s
+   * </code>
+   */
+    TIME_DURATION,
+    /**
    * Represents the enumerated type for the object of type {@code String} with restrictions
    * on characters that can be present in a string.
    */

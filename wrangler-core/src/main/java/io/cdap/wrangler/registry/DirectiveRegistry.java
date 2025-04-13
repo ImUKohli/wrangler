@@ -67,4 +67,6 @@ public interface DirectiveRegistry extends Closeable {
    */
   @Nullable
   ArtifactSummary getLatestWranglerArtifact();
+
+    void reload();
 }

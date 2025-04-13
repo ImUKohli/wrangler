@@ -66,7 +66,7 @@ public final class SystemDirectiveRegistry implements DirectiveRegistry {
   private final Map<String, DirectiveInfo> registry;
 
   @VisibleForTesting
-  SystemDirectiveRegistry() throws DirectiveLoadException {
+  public SystemDirectiveRegistry() throws DirectiveLoadException {
     this(new ArrayList<>());
   }
 

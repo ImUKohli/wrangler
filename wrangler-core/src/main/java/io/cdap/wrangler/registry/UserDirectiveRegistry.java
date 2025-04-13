@@ -116,7 +116,11 @@ public final class UserDirectiveRegistry implements DirectiveRegistry {
     this.context = context;
   }
 
-  /**
+    public UserDirectiveRegistry() {
+
+    }
+
+    /**
    * This method provides information about the directive that is being requested.
    *
    * <p>First, the directive is checked for existence with the internal registry.
